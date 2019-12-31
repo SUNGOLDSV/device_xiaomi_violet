@@ -30,15 +30,12 @@
 #include <stdlib.h>
 #define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
 #include <sys/_system_properties.h>
-
+#include <android-base/logging.h>
 #include <android-base/properties.h>
-#include "property_service.h"
-#include "vendor_init.h"
-
-using android::init::property_set;
-
-void property_override(char const prop[], char const value[])
-{
+#include "property_service.h"-
+namespace android {
+namespace init {
+void property_override(char const prop[], char const value[]) {
     prop_info *pi;
 
     pi = (prop_info*) __system_property_find(prop);
@@ -61,3 +58,5 @@ void vendor_load_properties()
     property_override("ro.build.description", "violet-user 9 PKQ1.181203.001 V10.3.9.0.PFHINXM release-keys");
     property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "google/coral/coral:10/QQ1B.191205.011/5974828:user/release-keys");
 }
+} //init
+} //android
