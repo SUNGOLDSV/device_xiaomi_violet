@@ -19,7 +19,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 CYGNUS_BUILD_TYPE := OFFICIAL
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := revengeos_violet
+PRODUCT_NAME := cygnus_violet
 PRODUCT_DEVICE := violet
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 7 Pro
