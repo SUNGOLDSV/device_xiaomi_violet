@@ -5,7 +5,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/revengeos_violet.mk
+    $(LOCAL_DIR)/cygnus_violet.mk
 
 COMMON_LUNCH_CHOICES := \
-    revengeos_violet-userdebug
+    cygnus_violet-userdebug
